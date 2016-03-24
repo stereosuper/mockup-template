@@ -1,0 +1,25 @@
+.home {
+    display: block;
+    width: 100%;
+    height: 2000px; /* enter bg image height here */
+    min-width: 1150px; /* display horizontal scrollbar under this breakpoint */
+    background: url('../layoutImg/') no-repeat 50% 0;  /* your bg image url */
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 50px; /* enter header bg image height here */
+    background: url('../layoutImg/') no-repeat 50% 0;  /* your header bg image url */
+    /* transition example
+    transition: all 0.3s ease-in-out; */
+}
+
+
+/* ex. of header behavior
+header.on {
+    top: -50px;
+}
+*/
