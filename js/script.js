@@ -74,7 +74,7 @@ function scrollBehaviors(){
 	/* add your desired scroll behaviors here */
 	/* ex. fixBloc(".leftBloc",200,1000); */
 	/* ex. parralaxBaby(".rightBloc",200,1000,100,150); */
-	/* ex. goBananas("header",100,1000,true,"on"); */
+	/* ex. goBananas("header",100,true,"on"); */
 	requestAnimFrame(function(){
 		scrollBehaviors();
 	});
