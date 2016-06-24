@@ -40,6 +40,12 @@ function parralaxBaby(id_string, scrollBegin, scrollEnd, topBegin, topEnd) {
 	if (myScroll>=scrollBegin && myScroll<scrollEnd) {
 		var calc= Math.ceil((topEnd-topBegin)*(myScroll-scrollBegin)/(scrollEnd-scrollBegin)+topBegin);
 		$(id_string).css("top",calc+"px");
+	} else {
+		if (myScroll<scrollBegin) {
+			$(id_string).css("transform","translate(0,"+topBegin+"px)");
+		} else {
+			$(id_string).css("transform","translate(0,"+topEnd+"px)");
+		}
 	}
 }
 //
