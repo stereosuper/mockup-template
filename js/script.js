@@ -40,6 +40,12 @@ function parralaxBaby(id_string, scrollBegin, scrollEnd, topBegin, topEnd) {
 	if (myScroll>=scrollBegin && myScroll<scrollEnd) {
 		var calc= Math.ceil((topEnd-topBegin)*(myScroll-scrollBegin)/(scrollEnd-scrollBegin)+topBegin);
 		$(id_string).css("top",calc+"px");
+	} else {
+		if (myScroll<scrollBegin) {
+			$(id_string).css("transform","translate(0,"+topBegin+"px)");
+		} else {
+			$(id_string).css("transform","translate(0,"+topEnd+"px)");
+		}
 	}
 }
 //
@@ -74,7 +80,7 @@ function scrollBehaviors(){
 	/* add your desired scroll behaviors here */
 	/* ex. fixBloc(".leftBloc",200,1000); */
 	/* ex. parralaxBaby(".rightBloc",200,1000,100,150); */
-	/* ex. goBananas("header",100,1000,true,"on"); */
+	/* ex. goBananas("header",100,true,"on"); */
 	requestAnimFrame(function(){
 		scrollBehaviors();
 	});
