@@ -6,6 +6,12 @@
     background: url('../layoutImg/') no-repeat 50% 0;  /* your bg image url */
 }
 
+body.showLinks a {
+    background: rgba(5,70,155,0.2);
+    border: 2px solid rgba(5,70,155,0.4);
+    transition-delay:0.05s;
+}
+
 header {
     position: fixed;
     left: 0;

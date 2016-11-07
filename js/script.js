@@ -87,6 +87,13 @@ $(document).ready(function() {
 	///////////////
 	/* add your desired reday behaviors here */
 	scrollBehaviors();
+	// show link areas on mouseDown
+	$('body').mousedown(function(event) {
+		$('body').addClass('showLinks');
+	});
+	$('body').mouseup(function(event) {
+		$('body').removeClass('showLinks');
+	});
 });
 //
 //
